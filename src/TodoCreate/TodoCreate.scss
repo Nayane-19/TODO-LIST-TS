@@ -1,0 +1,33 @@
+.TodoCreate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+    position: absolute;
+    top: 10.82rem;
+
+    input {
+        width: 39.87rem;
+        height: 3.37rem;
+        padding: 1rem;
+        border: 1ps solid var(--gray-700);
+        border-radius: 8px;
+        background: var(--gray-500);
+    }
+
+    button {
+        height: 3.37rem;
+        padding: 1rem;
+        gap: 0.5rem;
+        background: var(--blue);
+        color: var(--white);
+        border-radius: 8px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
