@@ -32,7 +32,7 @@ export function Task({ taskSelected, handleChangeStatuTask, handleDeleteTask }: 
             <span>{taskSelected.description}</span>
           </label>
         </div>
-        <Trash id={String(taskSelected.id)} onClick={() => handleDeleteTask(taskSelected.id)} />
+        <Trash onClick={() => handleDeleteTask(taskSelected.id)} />
       </div>
     </div>
   );

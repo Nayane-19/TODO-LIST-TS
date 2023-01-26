@@ -65,22 +65,23 @@ export function TodoCreate() {
               <span className="number-created">{concludedTasks} de {tasks?.length}</span>
             </div>
           </div>
-          {tasks?.map((item) => {
-            return (
-              <Task
-                taskSelected={item}
-                key={item.id}
-                handleChangeStatuTask={handleChangeStatuTask}
-                handleDeleteTask={handleDeleteTask}
-              />
-            )
-          })}
-          {tasks.length === 0 &&
+          {tasks?.length === 0 ?
             <div className="no-tasks">
               <Clipboard />
               <p>Você ainda não tem terefas cadastradas</p>
               <span>Crie tarefas e organize seus itens a fazer</span>
             </div>
+            : 
+            tasks?.map((item) => {
+              return (
+                <Task
+                  taskSelected={item}
+                  key={item.id}
+                  handleChangeStatuTask={handleChangeStatuTask}
+                  handleDeleteTask={handleDeleteTask}
+                />
+              )
+            })
           }
         </div>
     );
