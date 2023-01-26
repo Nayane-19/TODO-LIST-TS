@@ -4,8 +4,11 @@
 <p align="center"><img src=".\src\assets\layout.png"/></p>
 
 <h3 align="center">Projeto TODO com TypeScript</h3>
-<p align="center"><img src="https://media.giphy.com/media/xIWhuJUzT1VnoSjcvK/giphy.gif"/></p>
-<p align="center"><img src="https://media.giphy.com/media/LtLuCDH9GqrlNKBciL/giphy.gif"/></p>
+
+
+
+https://user-images.githubusercontent.com/53491642/214828769-351638ab-84bf-474b-9a73-3dd0300e0f91.mp4
+
 
 <h3>3. Tecnologias utilizadas</h3>
 <ul>
