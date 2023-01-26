@@ -1,0 +1,81 @@
+.Task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+
+    .task-box {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        width: 95%;
+        max-width: 46rem;
+        padding: 1.2rem;
+        background: var(--gray-500);
+        border: 1px solid #333333;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+
+        svg {
+            cursor: pointer;
+        }
+
+        .task-info {
+            display: flex;
+            gap: 1rem;
+
+            .input-radio {
+                position: absolute;
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            label {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+
+                .radio-btn {
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 100px;
+                    border: 1px solid #4EA8DE;
+                    display: block;
+                    margin-right: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    .check {
+                        display: none;
+                    }
+                }
+            }
+
+            input[type="checkbox"] + label {
+                color: #ccc;
+            }
+
+            input[type="checkbox"]:checked + label span {
+                color: #808080;
+                text-decoration-line: line-through;
+            }
+
+            input[type="checkbox"]:checked + label .radio-btn {
+                background: var(--purple-dark);
+                border: 1px solid var(--purple-dark);
+
+                .check {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+        }
+    }
+}
