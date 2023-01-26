@@ -1,5 +1,6 @@
 import "./TodoCreate.scss"
 import { ReactComponent as Plus } from "../assets/plus.svg";
+import { ReactComponent as Clipboard } from "../assets/Clipboard.svg";
 import { Task } from "../Task";
 import { useEffect, useState } from "react";
 import { TaskData } from "../@types/tasks";
@@ -75,7 +76,11 @@ export function TodoCreate() {
             )
           })}
           {tasks.length === 0 &&
-            <div>TDO</div>
+            <div className="no-tasks">
+              <Clipboard />
+              <p>Você ainda não tem terefas cadastradas</p>
+              <span>Crie tarefas e organize seus itens a fazer</span>
+            </div>
           }
         </div>
     );
